@@ -1,0 +1,283 @@
+.container {
+  width: min(850px, calc(100% - 32px));
+  margin: 24px auto;
+}
+
+.site-header {
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  color: white;
+  background: #0f172a;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+}
+
+.site-header p {
+  color: #cbd5e1;
+}
+
+.progress-card,
+.screen-card {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 15px rgb(15 23 42 / 5%);
+}
+
+.progress-card {
+  padding: 20px;
+}
+
+.progress-title {
+  margin: 0 0 18px;
+  color: #64748b;
+  text-align: center;
+}
+
+.progress-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.progress-step {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.progress-number {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 2px solid #cbd5e1;
+  border-radius: 50%;
+  background: white;
+  font-weight: bold;
+}
+
+.progress-step.active .progress-number,
+.progress-step.completed .progress-number {
+  border-color: #0d9488;
+  color: white;
+  background: #0d9488;
+}
+
+.progress-step.active {
+  color: #0f766e;
+  font-weight: bold;
+}
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.screen-header span:last-child,
+.muted-text {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.screen-body {
+  padding: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.field input,
+.field select {
+  min-width: 0;
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  font: inherit;
+}
+
+.field-title {
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+.choice-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.upload-box {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  color: #0f766e;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upload-box input {
+  max-width: 100%;
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 11px 16px;
+  margin-top: 14px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  background: #0d9488;
+  font: inherit;
+  font-weight: bold;
+}
+
+.info-box,
+.payment-option,
+.history-row {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  margin-top: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.info-box h3,
+.rating-area h3,
+.my-ride-heading h3 {
+  margin: 0;
+}
+
+.my-ride-card {
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.my-ride-card {
+  display: grid;
+  gap: 8px;
+}
+
+.my-ride-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-list {
+  display: grid;
+  gap: 14px;
+}
+
+.chat-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.chat-message {
+  max-width: 85%;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f1f5f9;
+}
+
+.chat-message.passenger {
+  justify-self: end;
+  background: #ccfbf1;
+}
+
+.payment-amount {
+  padding: 14px;
+  border-radius: 8px;
+  background: #ccfbf1;
+}
+
+.status-badge {
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #166534;
+  background: #dcfce7;
+}
+
+.rating-area {
+  text-align: center;
+}
+
+.rating-stars {
+  margin: 12px 0;
+  color: #f59e0b;
+  font-size: 2.4rem;
+}
+
+.muted-text {
+  margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+  .progress-list {
+    flex-wrap: wrap;
+  }
+
+  .progress-step {
+    flex-basis: 20%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .screen-header,
+  .screen-body {
+    padding: 16px;
+  }
+}
